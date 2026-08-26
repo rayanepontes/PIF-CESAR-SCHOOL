@@ -25,9 +25,8 @@ Cada exercício de programação possui seu próprio arquivo `.c`.
 Exemplo:
 
 ```text
-exercicio01.c
-exercicio02.c
-exercicio03.c
+ex01.c
+ex02.c
 ```
 
 Os exercícios não são agrupados em um único arquivo, facilitando a organização, compilação e avaliação individual de cada questão.
