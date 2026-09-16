@@ -3,10 +3,10 @@
 int main(){
     int numero;
     
-    printf("Digite um numero inteiro: ");
+    printf("digite um numero inteiro: ");
     scanf("%d", &numero);
 
-    printf("Decimal: %d | Hexadecimal: %x | Octal: %o | ASCII: %c\n", numero, numero, numero, numero);
+    printf("decimal: %d | hexadecimal: %x | octal: %o | ASCII: %c\n", numero, numero, numero, numero);
 
     return 0;
 }
