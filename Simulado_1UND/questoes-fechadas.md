@@ -75,42 +75,6 @@ c) Constitui um **erro de lógica**, e não um erro de compilação. Sintaticame
 
 Se a `condicao` for **verdadeira**, o programa entrará em um **laço infinito (loop infinito)**, executando repetidamente a instrução nula. Como não há código dentro do laço para alterar o estado das variáveis envolvidas na `condicao`, ela permanecerá verdadeira indefinidamente, travando a execução do programa nessa linha.
 
-```python
-code = """
-#include <stdio.h>
-#include <stdlib.h>
-
-int main() {
-    int i;
-    int soma = 0; // Correct scope
-    for (i = 1; i <= 10; i++) {
-        if (i == 5) continue;
-        if (i == 8) break;
-        soma += i * i;
-    }
-    printf("Soma final = %d\\n", soma);
-    return 0;
-}
-"""
-
-with open("q6.c", "w") as f:
-    f.write(code)
-
-import subprocess
-subprocess.run(["gcc", "q6.c", "-o", "q6"], check=True)
-out = subprocess.check_output(["./q6"]).decode()
-print(out)
-
-
-```
-
-```text
-Soma final = 115
-
-
-
-```
-
 ## **Questão 06**
 
 **Escopo de Bloco e Comandos de Desvio (`break` e `continue`)**

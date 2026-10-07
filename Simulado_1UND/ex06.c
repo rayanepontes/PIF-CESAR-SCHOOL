@@ -11,7 +11,7 @@ int main() {
         soma += i * i;
     }
 
-    printf("Soma final = %d\n", soma);
+    printf("soma final = %d\n", soma);
     system("PAUSE");
 
     return 0;
